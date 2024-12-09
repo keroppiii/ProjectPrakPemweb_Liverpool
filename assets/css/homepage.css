@@ -1,0 +1,142 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e8; /* Warna beige */
+  }
+  
+  header {
+    background-color: #f5f0e8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .auth-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .auth-links .login {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .auth-links .signup {
+    text-decoration: none;
+    color: #d1001f; /* Warna merah */
+    border: 1px solid #d1001f;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan input */
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 960px;
+    margin-top: 5px;
+  }
+  
+  .search-bar i {
+    font-size: 16px;
+    color: #666; /* Warna ikon */
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 14px;
+    width: 300px;
+  }
+  
+  
+  /* Styling untuk bagian hero */
+  .hero {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hero-image-wrapper img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+  }
+  
+  .headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Styling logo besar */
+  .club-logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .club-logo img {
+    width: 100px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  
+
+  /* Media query untuk layar tablet (maksimal 768px) */
+@media (max-width: 768px) {
+    main .hero {
+      height: 300px; 
+    }
+  }
+  
+  /* Media query untuk layar ponsel */
+  @media (max-width: 480px) {
+    main .hero {
+      height: 200px; 
+    }
+  }
+  
