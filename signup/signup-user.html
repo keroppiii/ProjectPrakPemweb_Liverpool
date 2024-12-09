@@ -13,14 +13,14 @@
     <div class="container">
       <img src="../assets/images/logo-liverpool.png" alt="LFC Logo" class="logo">
       <h1>Hi, Kopites! Join Us Now</h1>
-      <form class="form">
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+      <form class="form" method="POST" action="signup.php">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
         <p>Already have an account? <a href="../login/login-user.html">Sign in now!</a></p>
-        <button type="submit" class="join-btn">Join Now</button>
+        <button type="submit" name="join-btn" class="join-btn">Join Now</button>
       </form>
       <a href="../signup/signup-admin.html" class="admin-link">Join As Admin</a>
     </div>
-  </body>
-  </html>
+</body>
+</html>
