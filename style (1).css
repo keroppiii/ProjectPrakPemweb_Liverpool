@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f1e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    background-color: #f9f1e7;
+    border-radius: 8px;
+  }
+  
+  .logo {
+    width: 55px;
+    margin-bottom: 5px;
+  }
+  
+  h1 {
+    font-family: "Cardo", sans-serif;
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6b6b6b;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold; 
+    color: #000000;
+    font-size: 14px;
+  }
+
+  .form p {
+    font-size: px;
+    margin: 10px 0;
+  }
+  
+  .form a {
+    font-family: "Cardo", sans-serif;
+    color: #D1202A;
+    text-decoration: none;
+  }
+  
+  .form a:hover {
+    text-decoration: underline;
+  }
+
+  .form p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  
+  .join-btn {
+    background-color: #D1202A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .join-btn:hover {
+    background-color: #8b0000;
+  }
+  
+  .admin-link {
+    font-family: "Cardo", sans-serif;
+    display: block;
+    margin-top: 50px;
+    color: #D1202A;
+    text-decoration: none;
+  }
+  
+  .admin-link:hover {
+    text-decoration: underline;
+  }
+  
