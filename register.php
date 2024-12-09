@@ -2,7 +2,7 @@
 
 include 'connect.php';
 
-if(isset($_POST['signUp'])){//nama tombol
+if(isset($_POST['join-btn'])){//nama tombol
     $email = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -17,7 +17,7 @@ if(isset($_POST['signUp'])){//nama tombol
         $insertQuery="INSERT INTO users(username,email,password)
                        VALUES ('$username','$email','$password')";
             if($conn->query($insertQuery)==TRUE){
-                header("location: index.php"); //lokasi halaman
+                header("location: "); //lokasi halaman
             }
             else{
                 echo "Error:".$conn->error;
