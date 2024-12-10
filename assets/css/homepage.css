@@ -90,7 +90,7 @@ body {
   }
   
   
-  /* Styling untuk bagian hero */
+  /* Styling untuk bagian BANNER */
   .hero {
     position: relative;
     text-align: center;
@@ -146,6 +146,7 @@ body {
     margin-right: 20px;
   }
 
+  /* css UNTUK JADWAL MATCH */
   .judul2 h1 {
       font-family: 'Playfair Display', serif;
       font-weight: 700;
@@ -206,7 +207,7 @@ body {
     border-top: 2px solid #d0d0d0;
     margin: 30px 0;
   }
-
+ /* css UNTUK COUNDOWN */
   .countdown-container {
     display: flex;
     justify-content: center;
@@ -279,6 +280,7 @@ body {
     color: #65948b;
   }
 
+/* css UNTUK MERCH DI HOMEPAGE */
   .judul3 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -287,6 +289,79 @@ body {
     margin-bottom: 30px;
     color: #000000;
     text-align: center;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #f5f0e8;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.product-card img {
+  width: 100%; /* Mengatur lebar gambar menjadi 100% dari kontainer */
+  height: auto; /* Menjaga proporsi gambar */
+  aspect-ratio: 1 / 1; /* Menetapkan rasio aspek 1:1 untuk kotak */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak proporsi */
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card .price {
+  color: #e60000; /* Warna merah untuk harga */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.shop-btn {
+  background: #e60000; /* Merah untuk tombol beli */
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.shop-btn:hover {
+  background: #cc0000; /* Warna lebih gelap saat hover */
+}
+
+.product-card .price {
+color: #e60000; /* Warna merah untuk harga */
+font-weight: bold;
+margin: 10px 0;
+}
+
+/* css untuk bagian news di homepage*/
+.judul4 h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000000;
+  text-align: center;
 }
   
   
@@ -313,64 +388,3 @@ body {
     }
   }
 
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.product-card {
-    background: #f5f0e8;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 0px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.product-card:hover {
-    transform: scale(1.05); /* Efek zoom saat hover */
-}
-
-.product-card img {
-    width: 100%; /* Mengatur lebar gambar menjadi 100% dari kontainer */
-    height: auto; /* Menjaga proporsi gambar */
-    aspect-ratio: 1 / 1; /* Menetapkan rasio aspek 1:1 untuk kotak */
-    object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak proporsi */
-    margin-bottom: 10px;
-}
-
-.product-card h3 {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
-}
-
-.product-card .price {
-    color: #e60000; /* Warna merah untuk harga */
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.shop-btn {
-    background: #e60000; /* Merah untuk tombol beli */
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.shop-btn:hover {
-    background: #cc0000; /* Warna lebih gelap saat hover */
-}
-
-.product-card .price {
-  color: #e60000; /* Warna merah untuk harga */
-  font-weight: bold;
-  margin: 10px 0;
-}
-  
