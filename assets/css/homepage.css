@@ -49,14 +49,14 @@ body {
   }
   
   .auth-links .login {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
   }
   
   .auth-links .signup {
-    text-decoration: none;
+    text-decoration: underline;
     color: #d1001f; /* Warna merah */
-    border: 1px solid #d1001f;
+    border: 1px solid #000000;
     padding: 5px 10px;
     border-radius: 5px;
   }
@@ -65,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px; /* Jarak antara ikon dan input */
-    background-color: #fff;
+    background-color: #f5f0e8;
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 25px;
@@ -84,6 +84,7 @@ body {
     border: none;
     outline: none;
     padding: 2px;
+    background-color: #f5f0e8;
     font-size: 14px;
     width: 300px;
   }
@@ -104,32 +105,199 @@ body {
   
   .headline {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 33%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 3%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
   
   /* Styling logo besar */
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+ 
   .club-logo {
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .club-logo .line {
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 50px;
   }
   
   .club-logo img {
-    width: 100px;
+    width: 80px;
     height: auto;
     opacity: 0.8;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .judul2 h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 40px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #000000;
+      text-align: center;
+  }
+
+  .match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
   }
   
-  
+  .match .team {
+    display: flex;
+    align-items: center;
+  }
 
+  .match h2 {
+    font-family: "Cardo", sans-serif;
+  }
+  
+  .match .team img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  .match .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .match .details p {
+    font-family: "Bodoni Moda", serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 5px 0;
+  }
+  
+  .match .details h3 {
+    font-family: "Poppins", serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #d10000;
+    margin: 5px 0;
+  }
+  
+  .match hr {
+    border: 0;
+    border-top: 2px solid #d0d0d0;
+    margin: 30px 0;
+  }
+
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a81818;
+  }
+  
+  .text-and-timer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-style: italic;
+  }
+  
+  .text {
+    font-family: "Raleway", serif;
+    text-align: right; /* Agar sejajar dengan timer */
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2; /* Untuk mengatur jarak antar baris */
+    color: #244349;
+  }
+  
+  .timer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .time-box {
+    text-align: center;
+  }
+  
+  .time {
+    font-family: "Cardo", serif;
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #a55656;
+  }
+  
+  .label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5a2e19;
+  }
+  
+  .separator {
+    font-family: "Cardo", serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #5a2e19;
+    line-height: 48px;
+  }
+  
+  .time-box:nth-child(1) .time {
+    color: #ad1d1d;
+  }
+  
+  .time-box:nth-child(2) .time {
+    color: #b4360c;
+  }
+  
+  .time-box:nth-child(3) .time {
+    color: #46808c;
+  }
+  
+  .time-box:nth-child(4) .time {
+    color: #65948b;
+  }
+
+  .judul3 h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+    text-align: center;
+}
+  
+  
   /* Media query untuk layar tablet (maksimal 768px) */
 @media (max-width: 768px) {
     main .hero {
       height: 300px; 
+    }
+    .headline {
+      font-size: 20px;
+      top: 95%;
     }
   }
   
@@ -137,6 +305,11 @@ body {
   @media (max-width: 480px) {
     main .hero {
       height: 200px; 
+    }
+
+    .headline {
+      font-size: 5px;
+      top: 80%;
     }
   }
   
