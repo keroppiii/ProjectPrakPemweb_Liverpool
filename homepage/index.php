@@ -184,6 +184,16 @@
             ?>
         </div>
 
+        <div class="club-logo">
+          <div class="line"></div>
+          <img src="../assets/images/logoBesar - liverpool.png" alt="Liverpool Logo">
+          <div class="line"></div>
+        </div>
+        <div class="judul4">
+        <h1>What's Goin On About Liverpool</h1>
+      </div>
+
+      
     </div>
 
     
