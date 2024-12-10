@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $info = $_POST['info'];
     $price = $_POST['price'];
     $image = $_FILES['image']['name'];
-    $target = "uploads/" . basename($image);
+    $target = "../dashboard/uploads/" . basename($image);
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
         $sql = "INSERT INTO dashboard_data (image_url, info, price) VALUES ('$target', '$info', '$price')";
