@@ -6,18 +6,18 @@
     <title>Sign In - Liverpool FC</title>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
       <img src="../assets/images/logo-liverpool.png" alt="LFC Logo" class="logo">
       <h1>Sign In As Admin</h1>
-      <form class="form">
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+      <form class="form" method="POST" action="signin-admin.php">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
         <p>Not Registered Yet? <a href="../signup/signup-admin.html">Sign Up now!</a></p>
-        <button type="submit" class="join-btn">Sign In</button>
+        <button type="submit" name="signin-btn" class="join-btn">Sign In</button>
       </form>
     </div>
   </body>

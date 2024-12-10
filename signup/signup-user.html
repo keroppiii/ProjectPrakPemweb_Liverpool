@@ -6,21 +6,21 @@
     <title>Sign Up - Liverpool FC</title>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
       <img src="../assets/images/logo-liverpool.png" alt="LFC Logo" class="logo">
       <h1>Hi, Kopites! Join Us Now</h1>
-      <form class="form">
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+      <form class="form" method="POST" action="signup.php">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
         <p>Already have an account? <a href="../login/login-user.html">Sign in now!</a></p>
-        <button type="submit" class="join-btn">Join Now</button>
+        <button type="submit" name="join-btn" class="join-btn">Join Now</button>
       </form>
       <a href="../signup/signup-admin.html" class="admin-link">Join As Admin</a>
     </div>
-  </body>
-  </html>
+</body>
+</html>
