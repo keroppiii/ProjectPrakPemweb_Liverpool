@@ -12,7 +12,7 @@
     </header>
     <main>
         <div class="upload-form">
-            <h2>Tambah Produk</h2>
+            <h2>Homepage</h2>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <label for="image">Pilih Gambar:</label>
                 <input type="file" name="image" id="image" required>
@@ -26,6 +26,23 @@
         <h2>Produk yang Tersimpan</h2>
         <div class="product-grid">
             <?php include '../homepage/fetch_data.php'; ?>
+        </div>
+
+        <div class="upload-form">
+            <h2>Jersey</h2>
+            <form action="uploadj.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="info">Informasi:</label>
+                <textarea name="info" id="info" required></textarea>
+                <label for="price">Harga:</label>
+                <input type="number" name="price" id="price" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../merchandise/fetch_data.php'; ?>
         </div>
     </main>
     <footer>

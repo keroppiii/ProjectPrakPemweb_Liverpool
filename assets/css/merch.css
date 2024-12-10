@@ -1,0 +1,271 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e8; /* Warna beige */
+  }
+  
+  header {
+    background-color: #f5f0e8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .auth-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .auth-links .login {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .auth-links .signup {
+    text-decoration: underline;
+    color: #d1001f; /* Warna merah */
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan input */
+    background-color: #f5f0e8;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 960px;
+    margin-top: 5px;
+  }
+  
+  .search-bar i {
+    font-size: 16px;
+    color: #666; /* Warna ikon */
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    background-color: #f5f0e8;
+    font-size: 14px;
+    width: 300px;
+  }
+  
+  
+  /* Styling untuk bagian hero */
+  .hero {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hero-image-wrapper img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+  }
+  
+  /* Styling logo besar */
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+ 
+  .club-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .club-logo .line {
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 50px;
+  }
+  
+  .club-logo img {
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .judul3 h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 80px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background: linear-gradient(to right, #8b0000, #4e4e4e); /* Gradasi warna */
+            -webkit-background-clip: text; /* Klip latar belakang ke teks */
+            -webkit-text-fill-color: transparent; /* Isi teks transparan untuk menampilkan gradasi */
+      text-align: center;
+  }
+
+.judul4 h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000000;
+  margin-left: 40px;
+}
+
+.jersey{
+  margin-left: 20px;
+}
+  
+  
+  /* Media query untuk layar tablet (maksimal 768px) */
+@media (max-width: 768px) {
+    main .hero {
+      height: 300px; 
+    }
+    .headline {
+      font-size: 20px;
+      top: 95%;
+    }
+  }
+  
+  /* Media query untuk layar ponsel */
+  @media (max-width: 480px) {
+    main .hero {
+      height: 200px; 
+    }
+
+    .headline {
+      font-size: 5px;
+      top: 80%;
+    }
+  }
+
+/* Container untuk running text */
+.running-text-container {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #8b0000, #808080); /* Gradasi warna */
+  padding: 10px 0;
+}
+
+/* Teks berjalan */
+.running-text {
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  animation: scroll-text 10s linear infinite;
+}
+
+/* Animasi teks berjalan */
+@keyframes scroll-text {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #f5f0e8;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.product-card img {
+  width: 60%; /* Mengatur lebar gambar menjadi 100% dari kontainer */
+  height: auto; /* Menjaga proporsi gambar */
+  aspect-ratio: 1 / 1; /* Menetapkan rasio aspek 1:1 untuk kotak */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa merusak proporsi */
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card .price {
+  color: #e60000; /* Warna merah untuk harga */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.shop-btn {
+  background: #e60000; /* Merah untuk tombol beli */
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.shop-btn:hover {
+  background: #cc0000; /* Warna lebih gelap saat hover */
+}
+
+.product-card .price {
+color: #e60000; /* Warna merah untuk harga */
+font-weight: bold;
+margin: 10px 0;
+}
+  
