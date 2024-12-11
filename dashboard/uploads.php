@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $target = "../assets/images/uploads/" . basename($image);
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-        $sql = "INSERT INTO dashboard_jersey (image_url, info, price) VALUES ('$target', '$info', '$price')";
+        $sql = "INSERT INTO dashboard_souvenirs (image_url, info, price) VALUES ('$target', '$info', '$price')";
         if ($conn->query($sql) === TRUE) {
             echo "Data berhasil diunggah.";
         } else {
