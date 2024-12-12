@@ -16,9 +16,9 @@
             <span class="logo-text">Liverpool</span>
         </div>
         <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Players</a>
-            <a href="#">Merchandise</a>
+            <a href="../homepage/index.php">Home</a>
+            <a href="../players/players.php">Players</a>
+            <a href="../merchandise/merch.php">Merchandise</a>
             <a href="#">News</a>
         </nav>
         
