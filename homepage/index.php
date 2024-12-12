@@ -24,6 +24,7 @@
         
         <div class="auth-links">
           <?php
+          session_start(); // Mulai session
           if (isset($_SESSION['username'])) {
               echo '<span class="welcome">Welcome, ' . htmlspecialchars($_SESSION['username']) . '</span>';
               echo '<form action="" method="POST" style="display:inline;">';
@@ -33,8 +34,14 @@
               echo '<a href="../login/login-user.html" class="login">Log in</a>';
               echo '<a href="../signup/signup-user.html" class="signup">Sign Up</a>';
           }
+
+          if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
+            session_destroy();
+            header("Location: ../login/login-user.html");
+            exit();
+          }        
           ?>
-      </div>
+        </div>
     </div>
   </header>
   
