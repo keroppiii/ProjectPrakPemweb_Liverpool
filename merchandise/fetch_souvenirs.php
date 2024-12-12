@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, image_url, info, price FROM dashboard_data";
+$sql = "SELECT id, image_url, info, price FROM dashboard_souvenirs";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

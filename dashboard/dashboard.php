@@ -42,7 +42,41 @@
         </div>
         <h2>Produk yang Tersimpan</h2>
         <div class="product-grid">
-            <?php include '../merchandise/fetch_data.php'; ?>
+            <?php include '../merchandise/fetch_jersey.php'; ?>
+        </div>
+
+        <div class="upload-form">
+            <h2>Souvenirs</h2>
+            <form action="uploads.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="info">Informasi:</label>
+                <textarea name="info" id="info" required></textarea>
+                <label for="price">Harga:</label>
+                <input type="number" name="price" id="price" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../merchandise/fetch_souvenirs.php'; ?>
+        </div>
+
+        <div class="upload-form">
+            <h2>Limited Signed Items</h2>
+            <form action="uploadsi.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="info">Informasi:</label>
+                <textarea name="info" id="info" required></textarea>
+                <label for="price">Harga:</label>
+                <input type="number" name="price" id="price" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../merchandise/fetch_signed.php'; ?>
         </div>
     </main>
     <footer>

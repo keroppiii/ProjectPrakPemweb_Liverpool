@@ -92,7 +92,100 @@
             ?>
         </div>
 
+    <div class="jersey">
+      <div class="judul4">
+        <h1>Liverpool Souvenirs</h1>
+      </div>
+      <div class="product-grid">
+            <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "my_website";
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            if ($conn->connect_error) {
+                die("Koneksi gagal: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT id, image_url, info, price FROM dashboard_souvenirs";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                $count = 0; // Untuk menghitung jumlah produk yang ditampilkan
+                while($row = $result->fetch_assoc()) {
+                    echo '<div class="product-card">';
+                    echo '<img src="' . $row["image_url"] . '" alt="Gambar" />';
+                    echo '<h3>' . $row["info"] . '</h3>';
+                    echo '<p class="price">Price: $' . number_format($row["price"], 2, ',', '.') . '</p>'; // Menampilkan harga
+                    echo '<a href="https://store.liverpoolfc.com/" class="shop-btn">Shop Now</a>'; // Tombol "Buy Now" sebagai tautan
+                    echo '</div>';
+
+                    $count++;
+                    // Setiap 3 produk, tutup grid dan mulai grid baru
+                    if ($count % 3 == 0) {
+                        echo '</div><div class="product-grid">'; // Tutup dan mulai grid baru
+                    }
+                }
+                echo '</div>'; // Tutup grid produk
+            } else {
+                echo "Tidak ada data.";
+            }
+
+            $conn->close();
+            ?>
+        </div>
+
     </div>
+        <div class="running-text-container">
+            <div class="running-text">Liverpool Merch 100% Official</div>
+        </div>
+
+        <div class="jersey">
+      <div class="judul4">
+        <h1>Liverpool Limited Signed Items</h1>
+      </div>
+      <div class="product-grid">
+            <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "my_website";
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            if ($conn->connect_error) {
+                die("Koneksi gagal: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT id, image_url, info, price FROM dashboard_signed";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                $count = 0; // Untuk menghitung jumlah produk yang ditampilkan
+                while($row = $result->fetch_assoc()) {
+                    echo '<div class="product-card">';
+                    echo '<img src="' . $row["image_url"] . '" alt="Gambar" />';
+                    echo '<h3>' . $row["info"] . '</h3>';
+                    echo '<p class="price">Price: $' . number_format($row["price"], 2, ',', '.') . '</p>'; // Menampilkan harga
+                    echo '<a href="https://store.liverpoolfc.com/" class="shop-btn">Shop Now</a>'; // Tombol "Buy Now" sebagai tautan
+                    echo '</div>';
+
+                    $count++;
+                    // Setiap 3 produk, tutup grid dan mulai grid baru
+                    if ($count % 3 == 0) {
+                        echo '</div><div class="product-grid">'; // Tutup dan mulai grid baru
+                    }
+                }
+                echo '</div>'; // Tutup grid produk
+            } else {
+                echo "Tidak ada data.";
+            }
+
+            $conn->close();
+            ?>
+        </div>
     </div>
 
     
