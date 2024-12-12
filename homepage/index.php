@@ -23,9 +23,18 @@
         </nav>
         
         <div class="auth-links">
-          <a href="../login/login-user.html" class="login">Log in</a>
-          <a href="../signup/signup-user.html" class="signup">Sign Up</a>
-        </div>
+          <?php
+          if (isset($_SESSION['username'])) {
+              echo '<span class="welcome">Welcome, ' . htmlspecialchars($_SESSION['username']) . '</span>';
+              echo '<form action="" method="POST" style="display:inline;">';
+              echo '<button type="submit" name="logout" class="logout">Log Out</button>';
+              echo '</form>';
+          } else {
+              echo '<a href="../login/login-user.html" class="login">Log in</a>';
+              echo '<a href="../signup/signup-user.html" class="signup">Sign Up</a>';
+          }
+          ?>
+      </div>
     </div>
   </header>
   
