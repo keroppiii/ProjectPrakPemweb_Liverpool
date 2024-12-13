@@ -56,4 +56,51 @@ CREATE TABLE admin (
     password VARCHAR(200) NOT NULL
 );
 
+CREATE TABLE goalkeepers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    number INT NOT NULL,
+    image_url VARCHAR(255) NOT NULL
+);
 
+CREATE TABLE defenders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    number INT NOT NULL,
+    image_url VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE midfielders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    number INT NOT NULL,
+    image_url VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE forward (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    number INT NOT NULL,
+    image_url VARCHAR(255) NOT NULL
+);
+
+AlTER TABLE goalkeepers AUTO_INCREMENT = 500;
+AlTER TABLE defenders AUTO_INCREMENT = 600;
+AlTER TABLE midfielders AUTO_INCREMENT = 700;
+AlTER TABLE forward AUTO_INCREMENT = 800;
+
+INSERT INTO table_name (id, name, number, image_url) VALUES
+(501, 'ALLISON', 1, '../players/uploads/allison1.webp'),
+(502, 'VITEZSLAV', 56, '../players/uploads/vitezslav.webp'),
+(503, 'CAOIMHIN', 62, '../players/uploads/caoimhin.webp');
+
+
+INSERT INTO defenders (id, name, number, image_url) VALUES
+(601, 'VIRGIL VAN DIJK', 4, '../players/uploads/dfm2.webp'),
+(602, 'IBRAHIMA KONONATE', 5, '../players/uploads/ibrahima.webp'),
+(600, 'JOE GOMEZ', 2, '../players/uploads/joe.webp');
+
+INSERT INTO defenders (id, name, number, image_url) VALUES
+(701, 'WATARU ENDO', 3, '../players/uploads/wataru.webp'),
+(702, 'DOMINIK SZOBOSZLAI', 8, '../players/uploads/dominik.webp'),
+(700, 'ALEXIS MAC ALLISTER', 10, '../players/uploads/alexis.webp');

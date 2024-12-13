@@ -78,6 +78,75 @@
         <div class="product-grid">
             <?php include '../merchandise/fetch_signed.php'; ?>
         </div>
+
+        <div class="upload-form">
+            <h2>Goalkeepers</h2>
+            <form action="uploadg.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="name">Nama:</label>
+                <textarea name="name" id="name" required></textarea>
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../players/fetch_goalkeepers.php'; ?>
+        </div>
+
+        <div class="upload-form">
+            <h2>Defenders</h2>
+            <form action="uploadd.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="name">Nama:</label>
+                <textarea name="name" id="name" required></textarea>
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../players/fetch_defenders.php'; ?>
+        </div>
+
+        <div class="upload-form">
+            <h2>Midfielders</h2>
+            <form action="uploadm.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="name">Nama:</label>
+                <textarea name="name" id="name" required></textarea>
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../players/fetch_mainfielders.php'; ?>
+        </div>
+
+        <div class="upload-form">
+            <h2>Forward</h2>
+            <form action="uploadf.php" method="post" enctype="multipart/form-data">
+                <label for="image">Pilih Gambar:</label>
+                <input type="file" name="image" id="image" required>
+                <label for="name">Nama:</label>
+                <textarea name="name" id="name" required></textarea>
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" step="0.01" required>
+                <button type="submit">Unggah</button>
+            </form>
+        </div>
+        <h2>Produk yang Tersimpan</h2>
+        <div class="product-grid">
+            <?php include '../players/fetch_forward.php'; ?>
+        </div>
+
     </main>
     <footer>
         <p>&copy; 2024 LFC Merchandise</p>

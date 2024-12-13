@@ -1,0 +1,64 @@
+.player-card {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.player-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.player-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.judul4 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
