@@ -1,0 +1,153 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e8; /* Warna beige */
+  }
+  
+  header {
+    background-color: #f5f0e8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .auth-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .auth-links .login {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .auth-links .signup {
+    text-decoration: underline;
+    color: #d1001f; /* Warna merah */
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan input */
+    background-color: #f5f0e8;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 960px;
+    margin-top: 5px;
+  }
+  
+  .search-bar i {
+    font-size: 16px;
+    color: #666; /* Warna ikon */
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    background-color: #f5f0e8;
+    font-size: 14px;
+    width: 300px;
+  }
+
+
+
+
+
+
+
+  
+
+
+/*css untuk FOOTER*/
+.footer {
+    background-color: #a11919;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer .social-icons a img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .footer .app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  .footer .app-buttons a img {
+    width: 150px; /* Ukuran default untuk badge */
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .footer .app-buttons a img:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer p:last-of-type {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  
