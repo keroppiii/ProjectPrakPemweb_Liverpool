@@ -217,6 +217,32 @@
 
 </body>
 </html>
+
+
+
+
+  <footer class="footer">
+  <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="Facebook"></a>
+    <a href="https://twitter.com/" target="_blank">
+  <img src="https://cdn.simpleicons.org/x/FFFFFF" alt="X (Twitter)">
+</a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt="Instagram"></a>
+    <a href="https://www.tiktok.com/" target="_blank"><img src="https://cdn.simpleicons.org/tiktok/FFFFFF" alt="TikTok"></a>
+    <a href="https://www.youtube.com/" target="_blank"><img src="https://cdn.simpleicons.org/youtube/FFFFFF" alt="YouTube"></a>
+  </div>
+  <p>DOWNLOAD THE OFFICIAL LFC APP</p>
+  <div class="app-buttons">
+    <a href="https://www.apple.com/app-store/" target="_blank">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+    <a href="https://play.google.com/store" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+    </a>
+  </div>
+  <p>© Copyright 2024 All rights reserved.</p>
+</footer>
+
   <script src="https://unpkg.com/feather-icons"></script>
   <script>
     feather.replace(); // Mengaktifkan Feather Icons
