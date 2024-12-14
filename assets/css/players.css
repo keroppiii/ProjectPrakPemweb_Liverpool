@@ -1,15 +1,19 @@
+/* Styling untuk banner */
 .player-banner {
-    margin-top: 10px;
     position: relative;
-    width: 100%;
-    height: 500px;
+    width: 90%; /* Membuat banner sedikit lebih kecil dari layar */
+    height: 450px;
     overflow: hidden;
+    margin: 20px auto; /* Menambahkan margin agar banner berada di tengah layar */
+    border-radius: 15px; /* Membuat sudut banner melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Memberikan bayangan agar terlihat lebih estetik */
   }
   
   .player-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px; /* Menyesuaikan sudut gambar agar melengkung sama seperti kontainer */
   }
   
   .banner-overlay {
@@ -18,41 +22,50 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Efek gelap pada gambar */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    background: rgba(0, 0, 0, 0.4); /* Efek gelap pada gambar */
+    border-radius: 15px; /* Menyesuaikan overlay agar melengkung sama seperti banner */
   }
   
   .banner-overlay h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 80px;
+    font-size: 100px;
     margin: 0;
   }
   
-  .banner-overlay .categories {
-    margin-top: 20px;
+  /* Styling untuk container kategori di bawah banner */
+  .categories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Lebar kategori disesuaikan dengan lebar banner */
+    margin: -10px auto 0 auto; /* Mendekatkan kategori ke banner dan tetap di tengah layar */
+    background: #f5f0e8; /* Warna latar belakang putih */
+    padding: 10px 0;
   }
   
-  .banner-overlay .categories a {
+  .category-link {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: white;
+    color: #f5f0e8;
     text-decoration: none;
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: 1px solid white;
-    border-radius: 5px;
+    margin: 0 15px;
+    padding: 5px 25px;
+    background-color: #d1001f;
+    border-radius: 50px;
     transition: all 0.3s;
   }
   
-  .banner-overlay .categories a:hover {
-    background: white;
-    color: black;
+  .category-link:hover {
+    background: #7a0808;
+    color: #fff;
+    border-color: #000;
   }
+  
   
 
 
