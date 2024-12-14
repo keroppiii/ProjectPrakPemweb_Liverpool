@@ -29,11 +29,29 @@
         </div>
     </div>
   </header>
-  
+
   <div class="search-bar">
     <i data-feather="search"></i>
     <input type="text" placeholder="What Are You Looking For?">
   </div>
+
+  <div class="player-banner">
+  <img src="../assets/images/players/men/highlight.webp" alt="Team Banner">
+  <div class="banner-overlay">
+    <h1>MEN</h1>
+  </div>
+</div>
+
+<div class="categories-container">
+  <a href="#goalkeepers" class="category-link">Goalkeepers</a>
+  <a href="#defenders" class="category-link">Defenders</a>
+  <a href="#midfielders" class="category-link">Midfielders</a>
+  <a href="#forwards" class="category-link">Forwards</a>
+</div>
+
+  </div>
+</div>
+  
 
   <div class="judul4">
         <h1>Goalkeepers</h1>
