@@ -89,7 +89,7 @@ AlTER TABLE defenders AUTO_INCREMENT = 600;
 AlTER TABLE midfielders AUTO_INCREMENT = 700;
 AlTER TABLE forward AUTO_INCREMENT = 800;
 
-INSERT INTO table_name (id, name, number, image_url) VALUES
+INSERT INTO goalkeepers (id, name, number, image_url) VALUES
 (501, 'ALLISON', 1, '../players/uploads/allison1.webp'),
 (502, 'VITEZSLAV', 56, '../players/uploads/vitezslav.webp'),
 (503, 'CAOIMHIN', 62, '../players/uploads/caoimhin.webp');
@@ -100,7 +100,12 @@ INSERT INTO defenders (id, name, number, image_url) VALUES
 (602, 'IBRAHIMA KONONATE', 5, '../players/uploads/ibrahima.webp'),
 (600, 'JOE GOMEZ', 2, '../players/uploads/joe.webp');
 
-INSERT INTO defenders (id, name, number, image_url) VALUES
+INSERT INTO midfielders (id, name, number, image_url) VALUES
 (701, 'WATARU ENDO', 3, '../players/uploads/wataru.webp'),
 (702, 'DOMINIK SZOBOSZLAI', 8, '../players/uploads/dominik.webp'),
 (700, 'ALEXIS MAC ALLISTER', 10, '../players/uploads/alexis.webp');
+
+INSERT INTO forward (id, name, number, image_url) VALUES
+(801, 'LUIS DIAZ', 7, '../players/uploads/luis.webp'),
+(802, 'DARWIN NUNEZ', 9, '../players/uploads/darwin.webp'),
+(800, 'MOHAMED SALAH', 11, '../players/uploads/salah.webp');

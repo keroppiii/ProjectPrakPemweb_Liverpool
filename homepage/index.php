@@ -19,7 +19,7 @@
             <a href="../homepage/index.php">Home</a>
             <a href="../players/players.php">Players</a>
             <a href="../merchandise/merch.php">Merchandise</a>
-            <a href="#">News</a>
+            <a href="../news/news.php">News</a>
         </nav>
         
         <div class="auth-links">
