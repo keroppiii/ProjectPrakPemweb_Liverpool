@@ -20,4 +20,35 @@ const countdown = () => {
   };
   
   setInterval(countdown, 1000); // Update every second
-  
+
+  //banner homepage slider
+  let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  const slider = document.querySelector('.slider');
+  slider.style.transform = `translateX(-${index * 100}%)`;
+
+  // Menampilkan headline untuk slide yang aktif
+  const headlines = document.querySelectorAll('.headline-text');
+  headlines.forEach((headline, i) => {
+    headline.style.display = (i === index) ? 'block' : 'none';
+  });
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % totalSlides; // Jika sudah di slide terakhir, kembali ke awal
+  showSlide(currentIndex);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Jika sudah di slide pertama, kembali ke slide terakhir
+  showSlide(currentIndex);
+});
+
+// Menampilkan slide pertama ketika halaman pertama dimuat
+showSlide(currentIndex);
+
+
+

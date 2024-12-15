@@ -51,14 +51,35 @@
   </div>
   
   <main>
-    <section class="hero">
-        <div class="hero-image-wrapper">
-            <img src="../assets/images/homepage/highlight.webp" alt="Liverpool Match">
+  <section class="hero">
+  <div class="hero-image-wrapper">
+    <div class="slider">
+      <div class="slide">
+        <img src="../assets/images/homepage/highlight.webp" alt="Liverpool Match 1">
+        <div class="headline-text">
+          <a href="https://www.liverpoolfc.com/id/news/liverpool-qualify-champions-league-knockout-phase">
+          <h1>Liverpool Lolos ke Babak Sistem Gugur Liga Champions</h1>
+        </a>
         </div>
-      <div class="headline">
-        <h1>Liverpool lolos ke babak sistem gugur Liga Champions</h1>
       </div>
-    </section>
+      <div class="slide">
+        <img src="../assets/images/homepage/highlight3.webp" alt="Liverpool Match 2">
+        <div class="headline-text">
+          <a href="https://www.liverpoolfc.com/id/news/liverpool-claim-merseyside-derby-victory-over-everton-womens-league-cup">
+          <h1>Liverpool mengklaim kemenangan derby Merseyside atas Everton di Piala Liga Wanita</h1>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="controls">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
     
     <div class="container">
       <div class="club-logo">
