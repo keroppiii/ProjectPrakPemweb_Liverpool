@@ -34,13 +34,6 @@ AlTER TABLE dashboard_jersey AUTO_INCREMENT = 200;
 AlTER TABLE dashboard_souvenirs AUTO_INCREMENT = 300;
 AlTER TABLE dashboard_signed AUTO_INCREMENT = 400;
 
--- Membuat database 'login'
-CREATE DATABASE login;
-
--- Menggunakan database 'login'
-USE login;
-
--- Membuat tabel 'users'
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(200) NOT NULL,

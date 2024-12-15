@@ -11,6 +11,7 @@
         <h1>Dashboard</h1>
     </header>
     <main>
+        
         <div class="upload-form">
             <h2>Homepage</h2>
             <form action="upload.php" method="post" enctype="multipart/form-data">
