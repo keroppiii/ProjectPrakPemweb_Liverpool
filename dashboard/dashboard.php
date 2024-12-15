@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Dashboard LFC Merchandise</h1>
+        <h1>Dashboard</h1>
     </header>
     <main>
         <div class="upload-form">
