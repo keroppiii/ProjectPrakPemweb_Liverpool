@@ -233,12 +233,6 @@
             ?>
         </div>
 
-</body>
-</html>
-
-
-
-
   <footer class="footer">
   <div class="social-icons">
     <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="Facebook"></a>
