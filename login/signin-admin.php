@@ -11,7 +11,7 @@ if(isset($_POST['signin-btn'])){
      session_start();
      $row=$result->fetch_assoc();
      $_SESSION['username']=$row['username'];
-     header("Location: ../dashboard/dashboard-admin.php");
+     header("Location: ../dashboard/dashboard.php");
      exit();
     }
     else{
