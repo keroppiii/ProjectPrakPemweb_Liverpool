@@ -20,7 +20,7 @@
             <a href="../homepage/index.php">Home</a>
             <a href="../players/players.php">Players</a>
             <a href="../merchandise/merch.php">Merchandise</a>
-            <a href="#">News</a>
+            <a href="../news/news.php">News</a>
         </nav>
         
         <div class="auth-links">
@@ -249,12 +249,6 @@
             ?>
         </div>
 
-</body>
-</html>
-
-
-
-
   <footer class="footer">
   <div class="social-icons">
     <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="Facebook"></a>
@@ -281,3 +275,7 @@
   <script>
     feather.replace(); // Mengaktifkan Feather Icons
   </script>
+
+
+</body>
+</html>

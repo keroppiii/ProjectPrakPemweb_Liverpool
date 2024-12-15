@@ -46,6 +46,7 @@
     margin: -10px auto 0 auto; /* Mendekatkan kategori ke banner dan tetap di tengah layar */
     background: #f5f0e8; /* Warna latar belakang putih */
     padding: 10px 0;
+    margin-top: 50px;
   }
   
   .category-link {
