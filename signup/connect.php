@@ -1,14 +1,9 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$db = "login";
-
-// Membuat koneksi
-$conn = new mysqli($host, $username, $password, $db);
-
-// Memeriksa koneksi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+function connectDatabase($servername, $username, $password, $dbname) {
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Koneksi gagal: " . $conn->connect_error);
+    }
+    return $conn;
 }
 ?>
